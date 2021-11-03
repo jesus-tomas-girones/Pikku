@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickScan"
+        android:text="Escanear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No conectado"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonConnect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonConnect"
+        app:layout_constraintTop_toTopOf="@+id/buttonConnect" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickConnect"
+        android:text="Conectar"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScan" />
+
+    <TextView
+        android:id="@+id/textScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconectado"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonScan"
+        app:layout_constraintStart_toEndOf="@+id/buttonScan"
+        app:layout_constraintTop_toTopOf="@+id/buttonScan" />
+
+
+    <Button
+        android:id="@+id/buttonEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickEngine"
+        android:text="Arrancar Motor"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConnect" />
+
+    <TextView
+        android:id="@+id/textEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor parado"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEngine"
+        app:layout_constraintStart_toEndOf="@+id/buttonEngine"
+        app:layout_constraintTop_toTopOf="@+id/buttonEngine" />
+
+    <Button
+        android:id="@+id/buttonLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLed"
+        android:text="Encender LED"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEngine" />
+
+    <TextView
+        android:id="@+id/textLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED apagado"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLed"
+        app:layout_constraintStart_toEndOf="@+id/buttonLed"
+        app:layout_constraintTop_toTopOf="@+id/buttonLed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
